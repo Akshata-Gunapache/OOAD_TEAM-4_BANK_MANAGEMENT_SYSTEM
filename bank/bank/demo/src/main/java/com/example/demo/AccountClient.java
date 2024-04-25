@@ -79,7 +79,7 @@ class AccountClient {
             }
         };
 
-        List<Account> accounts = factory.createAccountsFromCSV("C:/Users/Usha K/Desktop/6THSEM/OOAD/demo/src/main/resources/account.csv");
+        List<Account> accounts = factory.createAccountsFromCSV("src/main/resources/account.csv");
 
         if (accounts != null && !accounts.isEmpty()) {
             for (Account account : accounts) {
