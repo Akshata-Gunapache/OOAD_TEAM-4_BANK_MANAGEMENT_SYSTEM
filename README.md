@@ -5,8 +5,8 @@ User creation, transfer of money and e-statement modules have been created and i
 The demo directory must be executed independently to generate e-statements, as it encompasses a distinct set of files and functionalities.
 
 # Team Members
-* A.Lakshanya
-* Akshata Ashok Gunapache
-* Akula Pranavi
-* Sree Hema Hasmita Kancharla
+* A.Lakshanya - PES2UG21CS001
+* Akshata Ashok Gunapache - PES2UG21CS050
+* Akula Pranavi - PES2UG21CS053
+* Sree Hema Hasmita Kancharla - PES2UG20CS347
 
