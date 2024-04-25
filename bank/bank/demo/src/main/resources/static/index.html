@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank E-Statement Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        .e-statement {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .e-statement h2 {
+            margin-top: 0;
+        }
+        .e-statement p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bank E-Statement Generator</h1>
+    <div class="container">
+        <form id="statementForm">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="cnic">CNIC:</label>
+                <input type="text" id="cnic" name="cnic" required>
+            </div>
+            <div>
+                <label for="accountNumber">Account Number:</label>
+                <input type="text" id="accountNumber" name="accountNumber" required>
+            </div>
+            <div>
+                <label for="accountType">Account Type:</label>
+                <input type="text" id="accountType" name="accountType" required>
+            </div>
+            <div>
+                <button type="submit">Generate E-Statement</button>
+            </div>
+        </form>
+
+        <div class="e-statement" id="eStatement" style="display: none;">
+            <h2>E-Statement</h2>
+            <p><strong>Name:</strong> <span id="eName"></span></p>
+            <p><strong>CNIC:</strong> <span id="eCnic"></span></p>
+            <p><strong>Account Number:</strong> <span id="eAccountNumber"></span></p>
+            <p><strong>Account Type:</strong> <span id="eAccountType"></span></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('statementForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            
+            // Get form data
+            var formData = new FormData(this);
+            
+            // Update e-statement with form data
+            document.getElementById('eName').innerText = formData.get('name');
+            document.getElementById('eCnic').innerText = formData.get('cnic');
+            document.getElementById('eAccountNumber').innerText = formData.get('accountNumber');
+            document.getElementById('eAccountType').innerText = formData.get('accountType');
+            
+            // Show e-statement
+            document.getElementById('eStatement').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
