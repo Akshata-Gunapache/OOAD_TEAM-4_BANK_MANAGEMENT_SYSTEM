@@ -4,7 +4,7 @@ The objective of this project is to create a robust and efficient system for the
 
 # Team Members
 * A.Lakshanya - PES2UG21CS001
-* Akshata Ashok Gunapache - PES2UG21CS050
 * Akula Pranavi - PES2UG21CS053
+* Ananya Nagulapati - PES2UG21CS064
 * Sree Hema Hasmita Kancharla - PES2UG20CS347
 
