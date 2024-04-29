@@ -1,8 +1,6 @@
 # BANK_MANAGEMENT_SYSTEM
 
-The Bank Management System (BMS) aims to streamline banking operations and enhance customer service. The project's primary objective is to develop, implement, and maintain a robust BMS to improve efficiency, accuracy, and transparency in managing banking operations and customer interactions.
-User creation, transfer of money and e-statement modules have been created and implemented successfully.
-The demo directory must be executed independently to generate e-statements, as it encompasses a distinct set of files and functionalities.
+The objective of this project is to create a robust and efficient system for the automated detection and classification of plant diseases. Leveraging advancements in computer vision and Deep learning, the system will analyze images of plants to identify signs of disease accurately. By employing deep learning techniques, the system will categorize the detected diseases into specific classes, enabling farmers to take targeted action.
 
 # Team Members
 * A.Lakshanya - PES2UG21CS001
